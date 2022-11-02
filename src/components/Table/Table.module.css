@@ -1,0 +1,41 @@
+.table {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    align-items: flex-end;
+    justify-content: center;
+}
+.elements__first {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+    gap: 10px;
+    height: 480px;
+}
+
+.elements__second {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 620px;
+    height: 270px;
+}
+
+.elements__third{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 410px;
+    height: 480px;
+}
+
+.elements__four {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 970px;
+    height: 130px;
+}

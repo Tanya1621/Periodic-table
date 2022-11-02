@@ -1,16 +1,12 @@
-implogo from './logo.svg';
 import style from './App.module.css';
+import {elements, lanthanides} from "./elements";
+import {Element} from "./components/Element/Element";
+import {Table} from "./components/Table/Table";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <div className={style.element}>
-          <p className={style.element__number}>1</p>
-          <p className={style.element__abbr}>H</p>
-          <p className={style.element__name}>Hydrogen</p>
-      </div>
-      </header>
+       <Table />
     </div>
   );
 }
