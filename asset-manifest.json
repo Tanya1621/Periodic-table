@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.4407dfc4.css",
-    "main.js": "./static/js/main.7a17711e.js",
+    "main.css": "./static/css/main.9cac2c2a.css",
+    "main.js": "./static/js/main.8c9553ef.js",
     "static/js/787.7b63f85e.chunk.js": "./static/js/787.7b63f85e.chunk.js",
+    "static/media/delete-button-svgrepo-com.svg": "./static/media/delete-button-svgrepo-com.b0b768c0e52e623d88cc74f1838d96fa.svg",
     "index.html": "./index.html",
-    "main.4407dfc4.css.map": "./static/css/main.4407dfc4.css.map",
-    "main.7a17711e.js.map": "./static/js/main.7a17711e.js.map",
+    "main.9cac2c2a.css.map": "./static/css/main.9cac2c2a.css.map",
+    "main.8c9553ef.js.map": "./static/js/main.8c9553ef.js.map",
     "787.7b63f85e.chunk.js.map": "./static/js/787.7b63f85e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4407dfc4.css",
-    "static/js/main.7a17711e.js"
+    "static/css/main.9cac2c2a.css",
+    "static/js/main.8c9553ef.js"
   ]
 }
