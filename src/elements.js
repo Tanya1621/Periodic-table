@@ -67,7 +67,7 @@ export const elements = [
         number: 9,
         name: 'Fluorine',
         weight: 18.998,
-        abbr: 'C',
+        abbr: 'F',
         feature: 'RNM',
         area: 'third',
     },
@@ -707,9 +707,6 @@ export const elements = [
         feature: 'Unknown',
         area: 'third',
     },
-]
-
-export const lanthanides = [
     {
         number: 58,
         name: 'Cerium',

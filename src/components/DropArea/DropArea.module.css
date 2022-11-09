@@ -1,0 +1,43 @@
+.drop_area {
+    border: 1px dashed plum;
+    width: 800px;
+    min-height: 100px;
+    margin: 20px auto;
+    color: #00f5bc;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #bd00fa, 0 0 2px #7a83ea, 0 0 0.2px blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.drop_area__heading {
+    font-family: "Helvetica Neue";
+    color: #00f5bc;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #bd00fa, 0 0 2px #7a83ea, 0 0 0.2px blue;
+    text-align: center;
+}
+
+
+
+.delete {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete__image {
+    height: 100px;
+    width: 100px;
+}

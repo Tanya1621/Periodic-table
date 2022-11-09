@@ -1,27 +1,14 @@
-@keyframes background {
-    0% {
-        background-position: 50% 200%;
-    }
-
-    50% {
-        background-position: 100% 0;
-    }
-
-    100% {
-        background-position: 50% 200%;
-    }
-
-}
 
 
 body {
-    background: -webkit-linear-gradient(90deg, #000000, #000000, #33beff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(90deg, #000000, #000000, #33beff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 300% 300%;
-    animation: background 10s ease infinite;
+    background-color: black;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+    min-width: 1400px;
 }

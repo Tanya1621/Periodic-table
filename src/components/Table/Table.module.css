@@ -7,6 +7,17 @@
     align-items: flex-end;
     justify-content: center;
 }
+
+
+
+.heading {
+    font-family: "Helvetica Neue";
+    color: #00f5bc;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #bd00fa, 0 0 2px #7a83ea, 0 0 0.2px blue;
+    text-align: center;
+}
+
 .elements__first {
     display: flex;
     flex-wrap: wrap;
@@ -39,3 +50,5 @@
     width: 970px;
     height: 130px;
 }
+
+
