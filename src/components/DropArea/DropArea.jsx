@@ -29,9 +29,8 @@ export const DropArea = ({draggedElements, setDraggedElements, isDragToDelete, s
     }
 
     const [, dropRef] = useDrop({
-        accept: 'element', collect: monitor => ({
-            isHover: monitor.isOver(),
-        }), drop(itemId) {
+        accept: 'element',
+        drop(itemId) {
             onDropHandler(itemId);
         }
     })
@@ -40,29 +39,34 @@ export const DropArea = ({draggedElements, setDraggedElements, isDragToDelete, s
     const borderColor = isDrag ? 'blue' : 'transparent';
     const display = isDragToDelete ? 'flex' : 'none';
 
-    const [, deleteRef] = useDrop({
-        accept: 'countedElement', drop(itemId) {
+    const [{isHover}, deleteRef] = useDrop({
+        accept: 'countedElement', collect: monitor => ({
+            isHover: monitor.isOver(),
+        }), drop(itemId) {
             onDeleteHandler(itemId);
             setDragToDelete(false);
         }
 
     })
 
+    const opacity = isHover? .7 : 1;
+
     return (
         <>
-        <h2 className={style.drop_area__heading}>Molecular mass calculator</h2>
-    <div className={style.drop_area} ref={dropRef} style={{borderColor}}>
-        {draggedElements.length === 0 && <p>Drop an element here</p>}
-        {draggedElements.map((element, index) => {
-            return <ElementInCounter isDragToDelete={isDragToDelete} setDragToDelete={setDragToDelete}
-                                     isCount={true} element={element} key={`${element.number}`}
-                                     draggedElements={draggedElements}
-                                     setDraggedElements={setDraggedElements}
-                                     setDraggedElements={setDraggedElements} isDrag={isDrag}
-                                     setDrag={setDrag}/>
-        })}
-        <div style={{display}} className={style.delete} ref={deleteRef}><img className={style.delete__image} src={image} alt='delete' /></div>
-    </div>
-    <h2 className={style.drop_area__heading}>{`Molecular weight: ${count.toFixed(2) > 0 ? count.toFixed(2) : 0}`}</h2>
-       </>)
+            <h2 className={style.drop_area__heading}>Molecular mass calculator</h2>
+            <div className={style.drop_area} ref={dropRef} style={{borderColor}}>
+                {draggedElements.length === 0 && <p>Drop an element here</p>}
+                {draggedElements.map((element, index) => {
+                    return <ElementInCounter isDragToDelete={isDragToDelete} setDragToDelete={setDragToDelete}
+                                             isCount={true} element={element} key={`${element.number}`}
+                                             draggedElements={draggedElements}
+                                             setDraggedElements={setDraggedElements}
+                                             setDraggedElements={setDraggedElements} isDrag={isDrag}
+                                             setDrag={setDrag}/>
+                })}
+                <div style={{display, opacity}} className={style.delete} ref={deleteRef}><img className={style.delete__image}
+                                                                                     src={image} alt='delete'/></div>
+            </div>
+            <h2 className={style.drop_area__heading}>{`Molecular weight: ${count.toFixed(2) > 0 ? count.toFixed(2) : 0}`}</h2>
+        </>)
 }
